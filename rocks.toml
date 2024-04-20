@@ -1,0 +1,66 @@
+# This is your rocks.nvim plugins declaration file.
+# Here is a small yet pretty detailed example on how to use it:
+#
+# [plugins]
+# nvim-treesitter = "semver_version"  # e.g. "1.0.0"
+
+# List of non-Neovim rocks.
+# This includes things like `toml` or other lua packages.
+[rocks]
+
+# List of Neovim plugins to install alongside their versions.
+# If the plugin name contains a dot then you must add quotes to the key name!
+[plugins]
+"rocks.nvim" = "2.24.0"
+neorg = "8.4.0"
+"oil.nvim" = "2.8.0"
+"rocks-config.nvim" = "1.5.0"
+nvim-treesitter = "0.9.2"
+tree-sitter-lua = "scm"
+tree-sitter-python = "scm"
+"mason-lspconfig.nvim" = "1.27.0"
+"lualine.nvim" = "scm"
+telescope = "0.6.0"
+"rocks-git.nvim" = "1.4.0"
+nvim-web-devicons = "0.99"
+"comment.nvim" = "0.8.0"
+nvim-autopairs = "scm"
+neogit = "scm"
+tree-sitter-typescript = "scm"
+tree-sitter-javascript = "scm"
+tree-sitter-css = "scm"
+tree-sitter-html = "scm"
+tree-sitter-bash = "scm"
+"mason.nvim" = "1.10.0"
+"conform.nvim" = "5.6.0"
+"diffview.nvim" = "scm"
+tree-sitter-cpp = "scm"
+tree-sitter-c = "scm"
+tree-sitter-fish = "scm"
+tree-sitter-rust = "scm"
+tree-sitter-fortran = "scm"
+tree-sitter-arduino = "scm"
+
+[plugins."barbar.nvim"]
+git = "romgrk/barbar.nvim"
+rev = "v1.7.0-beta.4"
+
+[plugins."nvim-tree.lua"]
+git = "nvim-tree/nvim-tree.lua"
+rev = "v1.3^{}"
+
+[plugins."lsp-zero.nvim"]
+git = "VonHeikemen/lsp-zero.nvim"
+
+[plugins."leap.nvim"]
+git = "ggandor/leap.nvim"
+
+[config]
+plugins_dir = "plugins/"
+auto_setup = false
+
+[treesitter]
+auto_highlight = [
+	"lua",
+	"toml",
+]

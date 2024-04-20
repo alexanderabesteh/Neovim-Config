@@ -1,0 +1,16 @@
+require('plugins/rocks-config')
+require('plugins/lualine-config')
+require('plugins/nvim-tree-config')
+require('plugins/treesitter-config')
+require('plugins/conform-config')
+require("plugins/comment-nvim-config")
+require('plugins/barbar-config')
+require("plugins/telescope-config")
+require('plugins/vimtex-config')
+
+require('keymap-config')
+require('settings')
+
+require("oil").setup()
+require("nvim-autopairs").setup()
+require("neogit").setup()
