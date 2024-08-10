@@ -14,6 +14,11 @@ require("nvim-treesitter.configs").setup({
         "fortran",
         "arduino",
         "html",
+        "go",
+        "java",
+        "latex",
+        "haskell",
+        "julia"
     },
     sync_install = false,
     highlight = {
@@ -72,7 +77,7 @@ require("nvim-treesitter.configs").setup({
     playground = {
         enable = true,
         disable = {},
-        updatetime = 25,   -- Debounced time for highlighting nodes in the playground from source code
+        updatetime = 25,         -- Debounced time for highlighting nodes in the playground from source code
         persist_queries = false, -- Whether the query persists across vim sessions
         keybindings = {
             toggle_query_editor = "o",

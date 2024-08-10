@@ -5,12 +5,15 @@ vim.g.mapleader = " " -- leader key
 
 --> oil <--
 map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
 --> neogit <--
 map("n", "ng", ":Neogit<CR>", {})
+
 --> diffview <--
 map("n", "<leader>do", ":DiffviewOpen<CR>", {})
 map("n", "<leader>dc", ":DiffviewClose<CR>", {})
 map("n", "<leader>dt", ":DiffviewToggleFiles<CR>", {})
+
 --> telescope mappings <--
 map("n", "<leader>fd", ":Telescope diagnostics<cr>", opts)
 map("n", "<leader>ff", ":Telescope find_files<cr>", opts)
@@ -18,12 +21,16 @@ map("n", "<leader>fr", ":Telescope lsp_references<cr>", opts)
 map("n", "<leader>oc", ":Telescope lsp_outgoing_calls<cr>", opts)
 map("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
 map("n", "<leader>fb", ":Telescope buffers<cr>", opts)
+
 --> tree <--
 map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 map("n", "<leader>ge", ":NvimTreeFocus<CR>", opts)
+
 --> general <--
 map("n", "<leader>r", ":luafile %<CR>", opts)
 map("n", "<leader>w", ":w<CR>", opts)
+map("n", "<leader>q", ":q<cR>", opts)
+
 --> leap <--
 map("n", "s", "<Plug>(leap-forward)", opts)
 map("n", "S", "<Plug>(leap-backward)", opts)
@@ -34,7 +41,9 @@ local lang_maps = {
     typescript = { exec = "bun %" },
     javascript = { exec = "bun %" },
     python = { exec = "python %" },
-    java = { build = "javac %", exec = "java %:r" },
+    --python = { exec = "poetry run python %" },
+    --java = { build = "javac %", exec = "java %:r" },
+    java = { exec = "java %" },
     sh = { exec = "./%" },
     go = { build = "go build", exec = "go run %" },
     rust = { exec = "cargo run" },
