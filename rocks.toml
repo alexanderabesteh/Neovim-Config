@@ -53,6 +53,10 @@ rev = "c099aecaf858574909bd38cbadb8543c4dd16611"
 git = "lervag/vimtex"
 rev = "v2.9"
 
+[plugins."gitsigns.nvim"]
+git = "lewis6991/gitsigns.nvim"
+rev = "v0.9.0"
+
 [config]
 plugins_dir = "plugins/"
 auto_setup = false
