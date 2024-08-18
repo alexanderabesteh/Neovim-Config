@@ -1,7 +1,8 @@
+--> Rocks config <--
 local rocks_config = {
-	--rocks_path = "/home/akula/.local/share/nvim/rocks",
-	--luarocks_binary = "/home/akula/.local/share/nvim/rocks/bin/luarocks",
-	rocks_path = vim.env.HOME .. "/.local/share/nvim/rocks",
+    --rocks_path = "/home/akula/.local/share/nvim/rocks",
+    --luarocks_binary = "/home/akula/.local/share/nvim/rocks/bin/luarocks",
+    rocks_path = vim.env.HOME .. "/.local/share/nvim/rocks",
 }
 
 vim.g.rocks_nvim = rocks_config

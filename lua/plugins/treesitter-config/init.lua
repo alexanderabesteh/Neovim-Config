@@ -1,5 +1,5 @@
 require("nvim-treesitter.configs").setup({
-    --> parsers <--
+    --> Parsers <--
     ensure_installed = {
         "c",
         "cpp",
@@ -28,7 +28,7 @@ require("nvim-treesitter.configs").setup({
     indent = {
         enable = true,
     },
-    --> textobjects selection <--
+    --> Textobjects selection <--
     textobjects = {
         select = {
             enable = true,
@@ -52,7 +52,7 @@ require("nvim-treesitter.configs").setup({
             },
         },
     },
-    --> moving between textobjext <--
+    --> Moving between textobjext <--
     move = {
         enable = true,
         set_jumps = true, -- whether to set jumps in the jumplist
@@ -73,7 +73,7 @@ require("nvim-treesitter.configs").setup({
             ["[M"] = "@class.outer",
         },
     },
-    --> treesitter playground <--
+    --> Treesitter playground <--
     playground = {
         enable = true,
         disable = {},
@@ -92,7 +92,7 @@ require("nvim-treesitter.configs").setup({
             show_help = "?",
         },
     },
-    --> refactor module
+    --> Refactor module
     refactor = {
         smart_rename = {
             enable = true,
@@ -101,7 +101,7 @@ require("nvim-treesitter.configs").setup({
             },
         },
     },
-    --> rainbow tags
+    --> Rainbow tags
     rainbow = {
         enable = true,
         extended_mode = true,

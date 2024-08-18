@@ -3,18 +3,18 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = " " -- leader key
 
---> oil <--
+--> Oil <--
 map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
---> neogit <--
+--> Neogit <--
 map("n", "ng", ":Neogit<CR>", {})
 
---> diffview <--
+--> Diffview <--
 map("n", "<leader>do", ":DiffviewOpen<CR>", {})
 map("n", "<leader>dc", ":DiffviewClose<CR>", {})
 map("n", "<leader>dt", ":DiffviewToggleFiles<CR>", {})
 
---> telescope mappings <--
+--> Telescope mappings <--
 map("n", "<leader>fd", ":Telescope diagnostics<cr>", opts)
 map("n", "<leader>ff", ":Telescope find_files<cr>", opts)
 map("n", "<leader>fr", ":Telescope lsp_references<cr>", opts)
@@ -22,20 +22,21 @@ map("n", "<leader>oc", ":Telescope lsp_outgoing_calls<cr>", opts)
 map("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
 map("n", "<leader>fb", ":Telescope buffers<cr>", opts)
 
---> tree <--
+--> Tree <--
 map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 map("n", "<leader>ge", ":NvimTreeFocus<CR>", opts)
 
---> general <--
+--> General <--
 map("n", "<leader>r", ":luafile %<CR>", opts)
 map("n", "<leader>w", ":w<CR>", opts)
 map("n", "<leader>q", ":q<cR>", opts)
 
---> leap <--
+--> Leap <--
 map("n", "s", "<Plug>(leap-forward)", opts)
 map("n", "S", "<Plug>(leap-backward)", opts)
 map("n", "gs", "<Plug>(leap-from-window)", opts)
 
+--> Compilers <--
 local lang_maps = {
     cpp = { build = "g++ % -o %:r", exec = "%:r" },
     typescript = { exec = "bun %" },
@@ -53,6 +54,7 @@ local lang_maps = {
     },
 }
 
+--> Execute Compilers <--
 for lang, data in pairs(lang_maps) do
     if data.build ~= nil then
         vim.api.nvim_create_autocmd(

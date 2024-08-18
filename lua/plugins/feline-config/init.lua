@@ -5,8 +5,10 @@ if not line_ok then
     return
 end
 
+-- Copy Paste Separators
 -- "┃", "█", "", "", "", "", "", "", "●"
 
+--> Icons
 local icons = {
     linux = ' ',
     macos = ' ',
@@ -21,6 +23,7 @@ local icons = {
     git = ' '
 }
 
+--> OS Info
 local function file_osinfo()
     local os = vim.bo.fileformat:upper()
     local icon
@@ -34,6 +37,7 @@ local function file_osinfo()
     return icon .. os
 end
 
+--> Colorscheme
 local nordfox = {
     fg = "#4c566a",
     bg = "#434c5e",
@@ -51,6 +55,7 @@ local nordfox = {
     black = "#000000",
 }
 
+--> VI Mode Colors
 local vi_mode_colors = {
     NORMAL = 'green',
     OP = 'green',
@@ -62,6 +67,7 @@ local vi_mode_colors = {
     COMMAND = 'aqua',
 }
 
+--> Feline Config <--
 local c = {
     vim_mode = {
         provider = {
@@ -364,6 +370,7 @@ local components = {
     },
 }
 
+--> Setup <--
 feline.setup {
     components = components,
     theme = nordfox,

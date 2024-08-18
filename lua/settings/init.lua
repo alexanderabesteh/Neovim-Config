@@ -1,5 +1,6 @@
 local set = vim.opt
 
+--> Settings <--
 set.expandtab = true
 set.smarttab = true
 set.shiftwidth = 4
@@ -32,7 +33,7 @@ set.mouse = "a"
 
 set.fillchars = "eob: "
 
-
+--> Colorscheme <--
 local nightfox = require('nightfox')
 
 nightfox.setup({
@@ -44,6 +45,6 @@ nightfox.setup({
     }
 })
 
--- load the configurations
+--> Load the configs <--
 nightfox.load()
 vim.cmd("colorscheme nordfox")

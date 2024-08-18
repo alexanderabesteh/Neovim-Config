@@ -11,13 +11,13 @@
 # List of Neovim plugins to install alongside their versions.
 # If the plugin name contains a dot then you must add quotes to the key name!
 [plugins]
-"rocks.nvim" = "2.36.1"
+"rocks.nvim" = "2.37.0"
 "mason.nvim" = "1.10.0"
 "rocks-config.nvim" = "2.2.0"
 "mason-lspconfig.nvim" = "1.30.0"
 neorg = "9.1.1"
-"oil.nvim" = "2.11.0"
-"conform.nvim" = "7.0.0"
+"oil.nvim" = "2.12.0"
+"conform.nvim" = "7.1.0"
 "diffview.nvim" = "scm"
 "rocks-git.nvim" = "2.0.1"
 neogit = "1.0.0"

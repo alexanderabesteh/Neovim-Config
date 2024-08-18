@@ -1,3 +1,4 @@
+--> Vimtex <--
 local M = {}
 
 function M.getCompletionItems(prefix)

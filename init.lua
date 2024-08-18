@@ -1,3 +1,4 @@
+--> Load Plugins <--
 require("plugins/rocks-config")
 require("plugins/feline-config")
 require("plugins/nvim-tree-config")
@@ -9,9 +10,11 @@ require("plugins/telescope-config")
 require("plugins/vimtex-config")
 require("plugins/nvim-cmp")
 
+--> Load settings and keybindings <--
 require("keymap-config")
 require("settings")
 
+--> Load other plugins <--
 require('leap').create_default_mappings()
 require("oil").setup()
 require("nvim-autopairs").setup()
