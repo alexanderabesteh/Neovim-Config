@@ -1,6 +1,5 @@
 --> Load Plugins <--
 require("plugins/rocks-config")
-require("plugins/feline-config")
 require("plugins/nvim-tree-config")
 require("plugins/treesitter-config")
 require("plugins/conform-config")
@@ -9,6 +8,7 @@ require("plugins/bufferline-config")
 require("plugins/telescope-config")
 require("plugins/vimtex-config")
 require("plugins/nvim-cmp")
+require("plugins/lualine-config")
 
 --> Load settings and keybindings <--
 require("keymap-config")

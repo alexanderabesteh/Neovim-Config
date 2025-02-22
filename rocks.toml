@@ -11,39 +11,39 @@
 # List of Neovim plugins to install alongside their versions.
 # If the plugin name contains a dot then you must add quotes to the key name!
 [plugins]
-"rocks.nvim" = "2.37.0"
-"mason.nvim" = "1.10.0"
-"rocks-config.nvim" = "2.2.0"
-"mason-lspconfig.nvim" = "1.30.0"
-neorg = "9.1.1"
-"oil.nvim" = "2.12.0"
-"conform.nvim" = "7.1.0"
+"rocks.nvim" = "2.43.1"
+"rocks-config.nvim" = "3.1.0"
+"mason-lspconfig.nvim" = "1.32.0"
+neorg = "9.2.0"
+"oil.nvim" = "2.15.0"
+"conform.nvim" = "9.0.0"
 "diffview.nvim" = "scm"
-"rocks-git.nvim" = "2.0.1"
-neogit = "1.0.0"
+"rocks-git.nvim" = "2.5.2"
+neogit = "2.0.0"
 nvim-web-devicons = "0.100"
 "nightfox.nvim" = "3.10.0"
 nvim-autopairs = "scm"
-"rocks-lazy.nvim" = "scm"
+"rocks-lazy.nvim" = "1.2.0"
 "nvim-tree.lua" = "1.6.0"
 "lsp-zero.nvim" = "scm"
 "comment.nvim" = "0.8.0"
 "plenary.nvim"= "scm"
-"bufferline.nvim" = "4.7.0"
-"feline.nvim" = "1.6.3"
+"bufferline.nvim" = "4.9.1"
 nvim-cmp = "scm"
 cmp-nvim-lsp = "scm"
 luasnip = "2.3.0"
 cmp-cmdline = "scm"
-nvim-lspconfig = "0.1.8"
+nvim-lspconfig = "1.6.0"
+"lualine.nvim" = "scm"
+"mason.nvim" = "1.11.0"
 
 [plugins.nvim-treesitter]
 git = "nvim-treesitter/nvim-treesitter"
-rev = "v0.9.2^{}"
+rev = "v0.9.3"
 
 [plugins."telescope.nvim"]
 git = "nvim-telescope/telescope.nvim"
-rev = "nvim-0.6"
+rev = "0.1.8"
 
 [plugins."leap.nvim"]
 git = "ggandor/leap.nvim"
@@ -51,11 +51,11 @@ rev = "c099aecaf858574909bd38cbadb8543c4dd16611"
 
 [plugins.vimtex]
 git = "lervag/vimtex"
-rev = "v2.9"
+rev = "v2.16"
 
 [plugins."gitsigns.nvim"]
 git = "lewis6991/gitsigns.nvim"
-rev = "v0.9.0"
+rev = "v1.0.1"
 
 [config]
 plugins_dir = "plugins/"
