@@ -9,6 +9,8 @@ require("plugins/telescope-config")
 require("plugins/vimtex-config")
 require("plugins/nvim-cmp")
 require("plugins/lualine-config")
+require("plugins/copilot-config")
+require("plugins/which-key-config")
 
 --> Load settings and keybindings <--
 require("keymap-config")
