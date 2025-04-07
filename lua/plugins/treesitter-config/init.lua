@@ -18,7 +18,12 @@ require("nvim-treesitter.configs").setup({
         "java",
         "latex",
         "haskell",
-        "julia"
+        "julia",
+        "hyprlang",
+        "json",
+        "toml",
+        "sql",
+        "asm"
     },
     sync_install = false,
     highlight = {

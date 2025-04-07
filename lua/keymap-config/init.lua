@@ -34,7 +34,17 @@ map("n", "<leader>q", ":q<cR>", opts)
 --> Leap <--
 map("n", "s", "<Plug>(leap-forward)", opts)
 map("n", "S", "<Plug>(leap-backward)", opts)
-map("n", "gs", "<Plug>(leap-from-window)", opts)
+--map("n", "gs", "<Plug>(leap-from-window)", opts)
+
+--> Copilot <--
+map("n", "<leader>xc", ":CopilotChat<CR>", opts)
+map("v", "<leader>xe", ":CopilotChatExplain<CR>", opts)
+map("v", "<leader>xr", ":CopilotChatReview<CR>", opts)
+map("v", "<leader>xf", ":CopilotChatFix<CR>", opts)
+map("v", "<leader>xo", ":CopilotChatOptimize<CR>", opts)
+map("v", "<leader>xd", ":CopilotChatDocs<CR>", opts)
+map("v", "<leader>xt", ":CopilotChatTests<CR>", opts)
+map("n", "<leader>xm", ":CopilotChatCommit<CR>", opts)
 
 --> Compilers <--
 local lang_maps = {
@@ -51,6 +61,10 @@ local lang_maps = {
     arduino = {
         build = "arduino-cli compile --fqbn arduino:avr:uno %:r",
         exec = "arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno %:r",
+    },
+    asm = {
+        build = "nasm -f elf64 -o %:r.o % && ld %:r.o -o %:r",
+        exec = "cd %:p:h && ./%:t:r",
     },
 }
 
