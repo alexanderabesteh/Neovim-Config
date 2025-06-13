@@ -33,16 +33,25 @@ set.mouse = "a"
 
 set.fillchars = "eob: "
 
+--> Configure Diagnostic Display <--
+vim.diagnostic.config({
+	virtual_text = true,
+	signs = true,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = true,
+})
+
 --> Colorscheme <--
-local nightfox = require('nightfox')
+local nightfox = require("nightfox")
 
 nightfox.setup({
-    options = {
-        styles = {
-            comments = 'italic',
-            functions = 'italic',
-        },
-    }
+	options = {
+		styles = {
+			comments = "italic",
+			functions = "italic",
+		},
+	},
 })
 
 --> Load the configs <--
