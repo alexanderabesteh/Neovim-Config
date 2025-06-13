@@ -11,8 +11,8 @@
 # List of Neovim plugins to install alongside their versions.
 # If the plugin name contains a dot then you must add quotes to the key name!
 [plugins]
-"rocks.nvim" = "2.44.0"
-"rocks-config.nvim" = "3.1.0"
+"rocks.nvim" = "2.45.0"
+"rocks-config.nvim" = "3.1.1"
 "mason-lspconfig.nvim" = "1.32.0"
 neorg = "9.3.0"
 "oil.nvim" = "2.15.0"
@@ -31,16 +31,22 @@ nvim-autopairs = "scm"
 "bufferline.nvim" = "4.9.1"
 nvim-cmp = "scm"
 cmp-nvim-lsp = "scm"
-luasnip = "2.3.0"
+luasnip = "2.4.0"
 cmp-cmdline = "scm"
-nvim-lspconfig = "1.8.0"
+nvim-lspconfig = "2.3.0"
 "lualine.nvim" = "scm"
 "mason.nvim" = "1.11.0"
 "which-key.nvim" = "3.17.0"
+nvim-dap = "0.10.0"
+nvim-dap-ui = "4.0.0"
+nvim-dap-virtual-text = "scm"
+nvim-dap-python = "scm"
+nvim-lint = "scm"
+"gitsigns.nvim"= "1.0.2"
 
 [plugins.nvim-treesitter]
 git = "nvim-treesitter/nvim-treesitter"
-rev = "v0.9.3"
+rev = "v0.10.0"
 
 [plugins."telescope.nvim"]
 git = "nvim-telescope/telescope.nvim"
@@ -54,17 +60,13 @@ rev = "c099aecaf858574909bd38cbadb8543c4dd16611"
 git = "lervag/vimtex"
 rev = "v2.16"
 
-[plugins."gitsigns.nvim"]
-git = "lewis6991/gitsigns.nvim"
-rev = "v1.0.2"
-
 [plugins."copilot.vim"]
 git = "github/copilot.vim"
-rev = "v1.44.0"
+rev = "v1.50.0"
 
 [plugins."copilotchat.nvim"]
 git = "copilotc-nvim/copilotchat.nvim"
-rev = "v3.10.1"
+rev = "v3.12.0"
 
 [config]
 plugins_dir = "plugins/"

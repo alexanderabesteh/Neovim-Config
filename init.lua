@@ -11,13 +11,16 @@ require("plugins/nvim-cmp")
 require("plugins/lualine-config")
 require("plugins/copilot-config")
 require("plugins/which-key-config")
+require("plugins/gitsigns-config")
 
 --> Load settings and keybindings <--
 require("keymap-config")
 require("settings")
 
 --> Load other plugins <--
-require('leap').create_default_mappings()
+require("plugins/dap-config")
+require("plugins/linting-config")
+require("leap").create_default_mappings()
 require("oil").setup()
 require("nvim-autopairs").setup()
 require("neogit").setup()
