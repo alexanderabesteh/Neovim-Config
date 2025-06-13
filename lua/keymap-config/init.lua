@@ -48,37 +48,37 @@ map("n", "<leader>xm", ":CopilotChatCommit<CR>", opts)
 
 --> Compilers <--
 local lang_maps = {
-    cpp = { build = "g++ % -o %:r", exec = "%:r" },
-    typescript = { exec = "bun %" },
-    javascript = { exec = "bun %" },
-    -- python = { exec = "python %" },
-    python = { exec = "poetry run python %" },
-    --java = { build = "javac %", exec = "java %:r" },
-    java = { exec = "java %" },
-    sh = { exec = "./%" },
-    go = { build = "go build", exec = "go run %" },
-    rust = { exec = "cargo run" },
-    arduino = {
-        build = "arduino-cli compile --fqbn arduino:avr:uno %:r",
-        exec = "arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno %:r",
-    },
-    asm = {
-        build = "nasm -f elf64 -o %:r.o % && ld %:r.o -o %:r",
-        exec = "cd %:p:h && ./%:t:r",
-    },
+	cpp = { build = "g++ % -o %:r", exec = "%:r" },
+	typescript = { exec = "bun %" },
+	javascript = { exec = "bun %" },
+	--python = { exec = "python %" },
+	python = { exec = "poetry run python %" },
+	--java = { build = "javac %", exec = "java %:r" },
+	java = { exec = "java %" },
+	sh = { exec = "./%" },
+	go = { build = "go build", exec = "go run %" },
+	rust = { exec = "cargo run" },
+	arduino = {
+		build = "arduino-cli compile --fqbn arduino:avr:uno %:r",
+		exec = "arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno %:r",
+	},
+	asm = {
+		build = "nasm -f elf64 -o %:r.o % && ld %:r.o -o %:r",
+		exec = "cd %:p:h && ./%:t:r",
+	},
 }
 
 --> Execute Compilers <--
 for lang, data in pairs(lang_maps) do
-    if data.build ~= nil then
-        vim.api.nvim_create_autocmd(
-            "FileType",
-            { command = "nnoremap <Leader>b :!" .. data.build .. "<CR>", pattern = lang }
-        )
-    end
+	if data.build ~= nil then
+		vim.api.nvim_create_autocmd(
+			"FileType",
+			{ command = "nnoremap <Leader>b :!" .. data.build .. "<CR>", pattern = lang }
+		)
+	end
 
-    vim.api.nvim_create_autocmd(
-        "FileType",
-        { command = "nnoremap <Leader>z :split<CR>:terminal " .. data.exec .. "<CR>", pattern = lang }
-    )
+	vim.api.nvim_create_autocmd(
+		"FileType",
+		{ command = "nnoremap <Leader>z :split<CR>:terminal " .. data.exec .. "<CR>", pattern = lang }
+	)
 end
