@@ -11,19 +11,19 @@
 # List of Neovim plugins to install alongside their versions.
 # If the plugin name contains a dot then you must add quotes to the key name!
 [plugins]
-"rocks.nvim" = "2.45.0"
-"rocks-config.nvim" = "3.1.1"
+"rocks.nvim" = "2.45.1"
+"rocks-config.nvim" = "3.1.2"
 "mason-lspconfig.nvim" = "1.32.0"
 neorg = "9.3.0"
 "oil.nvim" = "2.15.0"
 "conform.nvim" = "9.0.0"
 "diffview.nvim" = "scm"
-"rocks-git.nvim" = "2.5.3"
+"rocks-git.nvim" = "2.5.4"
 neogit = "2.0.0"
 nvim-web-devicons = "0.100"
 "nightfox.nvim" = "3.10.0"
 nvim-autopairs = "scm"
-"rocks-lazy.nvim" = "1.2.0"
+"rocks-lazy.nvim" = "1.2.2"
 "nvim-tree.lua" = "1.6.0"
 "lsp-zero.nvim" = "scm"
 "comment.nvim" = "0.8.0"
@@ -54,7 +54,7 @@ rev = "0.1.8"
 
 [plugins."leap.nvim"]
 git = "ggandor/leap.nvim"
-rev = "c099aecaf858574909bd38cbadb8543c4dd16611"
+rev = "897a9adbec7ac5d0900d4d13980c3f06c16b9092"
 
 [plugins.vimtex]
 git = "lervag/vimtex"
@@ -62,11 +62,11 @@ rev = "v2.16"
 
 [plugins."copilot.vim"]
 git = "github/copilot.vim"
-rev = "v1.50.0"
+rev = "v1.51.0"
 
 [plugins."copilotchat.nvim"]
 git = "copilotc-nvim/copilotchat.nvim"
-rev = "v3.12.0"
+rev = "v3.12.2"
 
 [config]
 plugins_dir = "plugins/"

@@ -21,6 +21,12 @@ map("n", "<leader>fr", ":Telescope lsp_references<cr>", opts)
 map("n", "<leader>oc", ":Telescope lsp_outgoing_calls<cr>", opts)
 map("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
 map("n", "<leader>fb", ":Telescope buffers<cr>", opts)
+map(
+	"n",
+	"<C-f>",
+	":lua require('telescope.builtin').current_buffer_fuzzy_find({sorting_strategy='ascending'})<CR>",
+	opts
+)
 
 --> Tree <--
 map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
