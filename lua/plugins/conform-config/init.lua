@@ -9,7 +9,8 @@ require("conform").setup({
 	formatters_by_ft = {
 		sh = { "beautysh" },
 		lua = { "stylua" },
-		python = { "isort", "black" },
+		-- python = { "isort", "black" },
+		python = { "ruff" },
 		javascript = { "prettier", "eslint_d" },
 		typescript = { "prettier", "eslint_d" },
 		javascriptreact = { "prettier", "eslint_d" },
