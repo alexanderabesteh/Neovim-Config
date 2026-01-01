@@ -1,26 +1,35 @@
---> Load Plugins <--
+--> Load Plugins (with configs) <--
 require("plugins/rocks-config")
-require("plugins/nvim-tree-config")
 require("plugins/treesitter-config")
 require("plugins/conform-config")
-require("plugins/comment-nvim-config")
-require("plugins/bufferline-config")
 require("plugins/telescope-config")
 require("plugins/vimtex-config")
 require("plugins/nvim-cmp")
 require("plugins/lualine-config")
-require("plugins/copilot-config")
-require("plugins/which-key-config")
-require("plugins/gitsigns-config")
-
---> Load settings and keybindings <--
-require("keymap-config")
-require("settings")
-
---> Load other plugins <--
+require("plugins/tiny-config")
+require("plugins/noice-config")
 require("plugins/dap-config")
 require("plugins/linting-config")
-require("leap").create_default_mappings()
+require("plugins/flash-nvim-config")
+
+--> Load Other Plugins <--
+require("nvim-tree").setup()
+require("Comment").setup()
+require("bufferline").setup()
+require("CopilotChat").setup()
+require("gitsigns").setup()
+require("neoscroll").setup()
+require("smear_cursor").setup()
 require("oil").setup()
 require("nvim-autopairs").setup()
 require("neogit").setup()
+require("toggleterm").setup()
+require("nvim-highlight-colors").setup()
+require("hardtime").setup()
+require("nvim-surround").setup()
+require("lean").setup({ mappings = true })
+
+--> Load settings and keybindings <--
+require("keymap-config")
+require("compilers-config")
+require("settings")
