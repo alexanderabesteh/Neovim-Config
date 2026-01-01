@@ -2,10 +2,11 @@ local lint = require("lint")
 
 lint.linters_by_ft = {
 	--lua = { "luacheck" },
-	python = { "pylint" },
+	python = { "ruff" },
 	javascript = { "eslint_d" },
 	typescript = { "eslint_d" },
 	cpp = { "cpplint" },
+	swift = { "swiftlint" },
 }
 
 local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
