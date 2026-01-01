@@ -12,3 +12,11 @@ require("mason-lspconfig").setup({
 		lsp_zero.default_setup,
 	},
 })
+
+local lspconfig = require("lspconfig")
+
+lspconfig.sourcekit.setup({
+	cmd = { "sourcekit-lsp" },
+	filetypes = { "swift" },
+	root_dir = lspconfig.util.root_pattern("Package.swift", ".git"),
+})
